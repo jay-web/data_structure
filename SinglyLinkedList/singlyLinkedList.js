@@ -87,17 +87,30 @@ class SinglyLinkedList {
     // ! method of get, to fetch value from any particular index value in list
     // * note- in singly link list, index value is not available like array
 
-    get(val){
-        if(n <= 0 || n >= this.length){
+    get(index){
+        if(index < 0 || index >= this.length){
             return null;
         }
         var counter = 0;
         var helper = this.head;
-        while(counter !== val){
+        while(counter !== index){
             helper = helper.next;
             counter++;
         }
         return helper;
+    }
+
+    // ! method of set, to change the value of any particular index number of list
+    // * note- in singly link list, index value is not available like array, so will use get function to fetch exact element as  per index passed
+
+    set(index, value){
+        var requiredNode = this.get(index);
+        if(requiredNode === null){
+            return false;
+        }
+        requiredNode.val = value;
+        return true;
+        
     }
 }
 
