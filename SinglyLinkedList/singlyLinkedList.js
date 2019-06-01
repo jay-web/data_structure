@@ -31,7 +31,7 @@ class SinglyLinkedList {
 
     }
 
-    // ! Method two pop, to remove the item from the end of list
+    // ! Method of pop, to remove the item from the end of list
 
     pop(){
         if(!this.head){
@@ -53,6 +53,21 @@ class SinglyLinkedList {
         }
         return current;     // ?  it will return the pop element of the list
     }
+
+    // ! method of shift, to remove the item from the starting of the list
+
+    shift(){
+        if(!this.head){
+            return undefined;       // ? if list is empty, return undefined
+        }
+        var temp = this.head;       // ? assign the head value in temporary variable
+        this.head = this.head.next;  // ? assign the 2nd value of list using next variable as a head
+        this.length--;
+        if(this.length === 0){  // ! this is the case when list reach at length 0
+            this.tail = null;   
+        }
+        return temp;
+    }
 }
 
 
@@ -61,4 +76,6 @@ list.push("a");                             // * it will create or add the new n
 list.push("b");
 list.push("c");
 // list.pop();
+console.log(list);
+console.log(list.shift());
 console.log(list);
