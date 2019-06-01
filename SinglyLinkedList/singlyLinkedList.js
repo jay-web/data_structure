@@ -68,6 +68,21 @@ class SinglyLinkedList {
         }
         return temp;
     }
+
+    // ! method of unshift, to add the new value at begining of the list
+
+    unshift(val){
+        var newNode = new Node(val);        // ? create the new instance of node
+        if(!this.head){                     // ? check if list is empty
+            this.head = newNode;            // ? set new node to head
+            this.tail = this.head;          // ? set head to tail
+        }else{
+            newNode.next = this.head;      // ? if list is not empty, new node next value would be current head
+            this.head = newNode;        // ? and new head will be new node
+        }
+        this.length++;      // ? increment the list 
+        return this;            // ? return the list
+    }
 }
 
 
