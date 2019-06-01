@@ -37,7 +37,7 @@ class SinglyLinkedList {
         if(!this.head){
             return undefined;  // ? if list is not created or empty return undefined
         }
-        var current = this.head;
+        var current = this.head;     // ? this is to hold the last item of list,
         var newTail = current;      // ? this is to hold the new tail which we get after remove previous tail
 
         while(current.next){            // ? loop till current next is available
