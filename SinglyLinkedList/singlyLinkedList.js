@@ -83,6 +83,22 @@ class SinglyLinkedList {
         this.length++;      // ? increment the list 
         return this;            // ? return the list
     }
+
+    // ! method of get, to fetch value from any particular index value in list
+    // * note- in singly link list, index value is not available like array
+
+    get(val){
+        if(n <= 0 || n >= this.length){
+            return null;
+        }
+        var counter = 0;
+        var helper = this.head;
+        while(counter !== val){
+            helper = helper.next;
+            counter++;
+        }
+        return helper;
+    }
 }
 
 
