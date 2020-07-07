@@ -12,6 +12,7 @@ class Stack {
 
     addValue(value) {
         this.data.push(value);
+        this.count++;
     }
 
     // ? method to get data
@@ -23,6 +24,7 @@ class Stack {
     // ? method to remove value from stack
 
     removeValue(){
+        this.count--;
         return this.data.pop();
     }
 
