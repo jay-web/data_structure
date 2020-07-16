@@ -211,6 +211,31 @@ class LinkedList {
 
         
     }
+
+    // * Method Twelve - for each to iterate every node of linked list and applied passed function
+
+    forEach(fn){
+        let node = this.head;
+        let counter = 0;
+
+        while(node){
+            fn(node, counter);
+            node = node.next;
+            counter++;
+        }
+    }
+
+    // * Method Thirteen - for of loop to iterate every node of linked list
+
+
+    *[Symbol.iterator]() {
+        let node = this.head;
+
+        while(node){
+            yield node;
+            node = node.next;
+        }
+    }
 }
 
 

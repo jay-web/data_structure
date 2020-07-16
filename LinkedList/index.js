@@ -54,16 +54,30 @@ list.insertLast(3000);
 
 // console.log("after remove at ", list);
 
-console.log("List ", list);
+// console.log("List ", list);
 
 list.insertAt(6700, 1);
 
-console.log("List ", list);
+// console.log("List ", list);
 
 console.log(list.size());
 
 console.log(list.getAt(2));
 
 list.insertAt(6700, 5);
+
+// console.log("List ", list);
+
+list.forEach((node, index) => {
+    node.data += 100;
+    
+});
+
+// console.log("List ", list);
+
+
+for(let n of list){
+    n.data += 150;
+}
 
 console.log("List ", list);
