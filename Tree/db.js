@@ -26,6 +26,38 @@ class Node {
     }
 }
 
+class Tree {
+    constructor(){
+        this.root = null;
+    }
+
+    traverseBF(fn){
+        // * Step 1- pass the root node of the tree to the new empty array
+        const arr = [this.root];
+
+        // * Step 2- iterate in new array till any element left in that
+
+        while(arr.length){
+            // * Step 3 - pull out first node from the new array.
+            const node = arr.shift();
+            
+            // * Step 4 - insert all the children of the node which we pulled out in Step 3, at the end of same array
+
+            arr.push(...node.children);     // ? Using Spread operator
+
+            // for(let child of node.children){         // ? Classic loop method 
+            //     arr.push(child);
+            // }
+            
+            // * Step 5 - Pass the pulled out node in passed function to further required calculation
+
+            fn(node);
 
 
-module.exports = { Node };
+        }
+    }
+}
+
+
+
+module.exports = { Node, Tree };
