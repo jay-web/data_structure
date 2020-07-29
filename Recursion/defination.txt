@@ -1,0 +1,7 @@
+* - It is the function which called itself.
+* - It invoke itself with different input until it reach its base point or case.
+* - Base case is the point where recursion ends like while loop
+
+* - So two essential requirements for recursion
+    - One is base case
+    - Second is different input
