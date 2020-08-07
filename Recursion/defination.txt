@@ -5,3 +5,14 @@
 * - So two essential requirements for recursion
     - One is base case
     - Second is different input
+
+* - Helper method recursion
+    - Here, we create the function which will be normal function 
+    - Inside, normal function we will create another function which we use as recursion function
+
+* - Tips
+    - For arrays, use methods like slice, the spread operator, and concat that make copies 
+    - of arrays so you do not mutate them
+
+    - String are immutable so you need to use methods like slice, substr or substring to 
+        to make copies of strings
