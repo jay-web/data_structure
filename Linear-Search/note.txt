@@ -1,0 +1,9 @@
+// * Big O of Linear Search
+
+// Best case - O(1)
+// Average case - O(n)
+// Worst case - O(n)
+
+Since, as number of input length increases, operation also increased equally
+
+so the Big(O) of linear search is - O(n)

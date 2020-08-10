@@ -1,0 +1,8 @@
+// Binear Search
+
+Big(o) of Binary Search
+    - Best case O(1);
+    - Worst and Average case O(logn)
+
+// Note - Input array should be sorted
+        - Without sorted array, binary search don't work
