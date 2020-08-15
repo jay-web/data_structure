@@ -1,0 +1,9 @@
+// * Bubble Sort
+
+Big O - Due to nested loop, bubble sort BIG(O) is n^2 
+
+Note - we can converted into log(n) which means linear, if we inserted almost sorted array in that
+    where we need implement noSwap method to stop the iteration after first iteration
+    But it will applicable on single value sorting
+
+But- best way is to use different sorting algo instead of noswap in bubble sort

@@ -1,0 +1,8 @@
+// Selection Sort
+
+Selection sort will store the first index as per iteration, as lowest value index
+Then start the iteration, if it find any new lowest value then it swap it's index with the store one.
+and after first iteration in array, if lowest value changed while iteration, 
+then it swap the value in array with the first index to the lowest one.
+
+Big(O) of selection sort is - n^2 (because of the nested looping)
