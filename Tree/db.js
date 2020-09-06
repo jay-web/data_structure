@@ -9,16 +9,12 @@ class Node {
     }
 
     // * Add method
-
     add(data) {
         const newNode = new Node(data);
         this.children.push(this.newNode);
 
     }
-
-
     // * remove method
-
     remove(data) {
         this.children = this.children.filter((node) => {
             return node.data !== data;
@@ -56,8 +52,6 @@ class Tree {
 
         }
     }
-
-
     traverseDF(fn) {
         const arr = [this.root];
 
