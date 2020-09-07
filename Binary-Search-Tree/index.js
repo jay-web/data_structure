@@ -25,4 +25,7 @@ ageBox.insertNode(18);
 
 ageBox.insertNode(9);
 
-console.log(ageBox);
+console.log("Result after insert", ageBox);
+
+
+console.log("Seach result ", ageBox.search(25));
