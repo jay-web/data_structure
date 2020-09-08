@@ -1,4 +1,5 @@
 // ! Binary Search Tree is the tree type data structure
+// ! Big-O of Binary Search Tree, is normally O(log n);
 // ! Two rules to create BST
 // ! First tree should binary one- means only 0, 1 or max 2 child of single parent
 // ! Data should be inserted in sorted form
@@ -73,6 +74,7 @@ class BST {
     }
   }
 
+  // !==========================================
   // ? Search or find method
   search(value) {
     // * If root is not available
@@ -117,6 +119,59 @@ class BST {
         }
       }
     }
+  }
+
+  // !==========================================
+  // ? Breadth First Search - Tree Traversal
+  BFS() {
+    // TODO: Create Queue, Data and temp variable to traverse in tree
+    let queue = [];
+    let data = [];
+    let node = 0;
+
+    // TODO: Put the root value of tree into queue as a first element
+    queue.push(this.root);
+
+    // TODO : Iterate into queue till its has any node left
+    
+    while(queue.length){
+      // TODO: Now take the first node of the queue, and assign it to temp variable
+      node = queue.shift();
+
+      // * check if node has left node, if yes
+      // TODO: Take the left node, and push it to queue
+      if(node.left !== null){
+        queue.push(node.left);
+      }
+     
+
+      // * check if node has right node, if yes
+      // TODO : Take the right node and push it to queue
+      if(node.right !== null){
+        queue.push(node.right);
+      }
+    
+      // TODO : Now push the value of node into data array
+      data.push(node.value);
+
+    }
+    return data;
+  }
+
+  // !==========================================
+  // ? Depth First Search - PreOrder
+
+  DFSPreorder(){
+    let data = [];
+
+    function traverse(node){
+      data.push(node.value);
+      if(node.left) traverse(node.left);
+      if(node.right) traverse(node.right);
+    }
+
+    traverse(this.root);
+    return data;
   }
 }
 
