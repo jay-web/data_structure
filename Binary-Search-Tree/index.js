@@ -19,7 +19,6 @@ ageBox.insertNode(55);
 
 console.log("Result after insert", ageBox);
 
-
 console.log("Seach result ", ageBox.search(25));
 
 
@@ -27,3 +26,7 @@ console.log("Breadth First Search- Traversal ", ageBox.BFS());
 
 
 console.log("Depth First Search- Traversal-preorder ", ageBox.DFSPreorder());
+
+console.log("Depth First Search- Traversal-postorder ", ageBox.DFSPostorder());
+
+console.log("Depth First Search- Traversal- inorder ", ageBox.DFSInorder());
