@@ -8,18 +8,21 @@ class Node {
         this.children = [];         // * to store children nodes
     }
 
-    // * Add method
-    add(data) {
-        const newNode = new Node(data);
-        this.children.push(this.newNode);
+       // * Add method
+       add(data) {
+      
+       const newNode = new Node(data);
+       this.children.push(newNode);
 
-    }
-    // * remove method
-    remove(data) {
-        this.children = this.children.filter((node) => {
-            return node.data !== data;
-        });
-    }
+   }
+   // * remove method
+   remove(data) {
+       this.children = this.children.filter((node) => {
+           return node.data !== data;
+       });
+   }
+
+   
 }
 
 class Tree {
@@ -68,4 +71,4 @@ class Tree {
 
 
 
-module.exports = { Node, Tree };
+module.exports = Tree;

@@ -1,5 +1,6 @@
 const Tree = require("./db");
 
+
 // * Create the instance of tree 
 
 const ageBox = new Tree();
@@ -10,9 +11,9 @@ console.log("Result before insert", ageBox);
 
 ageBox.insertNode(30);
 ageBox.insertNode(20);
-ageBox.insertNode(50);
 ageBox.insertNode(10);
 ageBox.insertNode(25);
+ageBox.insertNode(50);
 ageBox.insertNode(40);
 ageBox.insertNode(55);
 
