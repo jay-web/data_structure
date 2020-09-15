@@ -3,11 +3,25 @@ const MaxBinaryHeap = require("./db");
 
 const timeBox = new MaxBinaryHeap();
 
-timeBox.insertIntoHeap(100);
-timeBox.insertIntoHeap(200);
-timeBox.insertIntoHeap(20);
-timeBox.insertIntoHeap(110);
-timeBox.insertIntoHeap(130);
-// timeBox.insertIntoHeap(30);
+timeBox.insertIntoHeap(55);
+timeBox.insertIntoHeap(39);
+timeBox.insertIntoHeap(41);
+timeBox.insertIntoHeap(18);
+timeBox.insertIntoHeap(27);
+timeBox.insertIntoHeap(12);
+timeBox.insertIntoHeap(33);
 
-console.log(timeBox);           
+
+console.log(timeBox);    
+
+console.log(timeBox.extractFromHeap());
+console.log(timeBox);   
+console.log(timeBox.extractFromHeap());
+
+console.log(timeBox);   
+
+console.log(timeBox.extractFromHeap());
+
+
+
+console.log(timeBox); 
