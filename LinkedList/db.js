@@ -35,20 +35,6 @@ class LinkedList {
             tHead = tHead.next;
         }
 
-        
-        // if(this.head != null){    
-        //     do{
-        //         counter++;                          
-        //         nextNode = tHead.next;                  
-        //         tHead = nextNode;                 
-        //     }
-        //     while(nextNode != null);                  
-    
-        // }else{
-        //     return counter;
-        // }
-
-        
         return counter;
     }
 

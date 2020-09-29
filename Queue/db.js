@@ -23,14 +23,14 @@
     // ? Method to check data
 
     showData(){this.data[-1]
-        console.log(this.data);
+        
         return this.data;
     }
 
     // ? Method to get last item in array, but no need to remove it
 
     getLastItem() {
-        console.log(this.data[this.count - 1]);
+        
         return this.data[this.count - 1];
     }
 }
