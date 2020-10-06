@@ -2,7 +2,7 @@ const hash = require("./hash-function");
 
 
 class HashTable {
-    constructor(size = 3){
+    constructor(size = 10){
         this.keyMap = new Array(size);
     }
 
