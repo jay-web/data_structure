@@ -45,7 +45,7 @@ class Graph {
         }
         delete this.adjacentList[vertex];
     }
-    // Depth First Search - Recursively
+    // Depth First Traversal - Recursively
     DFSR(start) {
         let result = [];
         let visited= {};
@@ -72,7 +72,7 @@ class Graph {
         return result;
     }
 
-    // Depta First Search - Iterative
+    // Depta First Traversal - Iterative
 
     DFSI(start) {
         let stack = [];     // * Stack to iterate left vertex
@@ -99,7 +99,7 @@ class Graph {
         return result;      // * Finally return the result array ( line 79)
     }
 
-    // * Breadth First Search - Iteratively
+    // * Breadth First Traversal - Iteratively
 
     BFSI(start) {
         let queue = [];     // * Queue to hold the vertices for iteration
@@ -123,6 +123,32 @@ class Graph {
         }
 
         return result;
+    }
+
+    BFSR(start) {
+        let result = [];
+        let visited = {};
+        let adjacentList = this.adjacentList;
+
+        function BFS(vertex){
+            // Base case
+            if(!vertex){
+                return null;
+            }
+            result.unshift(vertex);
+            visited[vertex] = true;
+            adjacentList[vertex].forEach(neighbour => {
+                if(!visited[neighbour]){
+                    return BFS(neighbour);
+                }
+            })
+        }
+
+        BFS(start);
+
+        return result;
+
+
     }
 }
 

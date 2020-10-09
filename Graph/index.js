@@ -34,6 +34,10 @@ const result3 = Area.BFSI("A");
 
 console.log({result3});
 
+const result4 = Area.BFSR("A");
+
+console.log({result4});
+
 // Area.addVertex("Palam");
 // Area.addVertex("IGI");
 // Area.addVertex("CP");
