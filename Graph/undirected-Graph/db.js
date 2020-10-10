@@ -22,20 +22,19 @@ class Graph {
 
     removeEdge(vertex1, vertex2){
        
-        let edgeArray = this.adjacentList[vertex1].filter((area) => {
+       
+        this.adjacentList[vertex1]= this.adjacentList[vertex1].filter((area) => {
             if( area !== vertex2){
                 return area;
             };
         });
        
-        let edgeArray2 = this.adjacentList[vertex2].filter((area) => {
+        this.adjacentList[vertex2] = this.adjacentList[vertex2].filter((area) => {
              if(area !== vertex1){
                  return area;
              };
         })
         
-        this.adjacentList[vertex1] = edgeArray;
-        this.adjacentList[vertex2] = edgeArray2;
     }
 
     removeVertex(vertex) {
