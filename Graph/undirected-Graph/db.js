@@ -21,7 +21,7 @@ class Graph {
     }
 
     removeEdge(vertex1, vertex2){
-        // * Below code assuming again as undirected graph
+       
         let edgeArray = this.adjacentList[vertex1].filter((area) => {
             if( area !== vertex2){
                 return area;
